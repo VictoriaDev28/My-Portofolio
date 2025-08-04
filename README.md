@@ -3,4 +3,4 @@
 This is a personal portfolio, that showcase my educational background, skills and interest, etc.
 
 Netlify Link:
-https://fascinating-boba-fcc62a.netlify.app/
+https://victoriajohn-portfolio.netlify.app/
