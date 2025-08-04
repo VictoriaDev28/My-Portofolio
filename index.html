@@ -1,0 +1,144 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale-1.0">
+        <meta name="author" content="Victoria">
+        <meta name="desciption" content="This is a portfolio page contains the info about the author.">
+        <title>Victoria Portfolio</title>
+        <link rel="icon" href="img/myphoto.jpg" type="img">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <!-- My Body Header-->
+        <header>
+         <nav>
+           <div class="header">
+            <div class="navbar">
+                <h1>Victoria John</h1>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#EB">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#interest">Interest</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+           </div>
+         </nav>
+        </header>
+
+        <!-- body main section -->
+        <main>
+            <!-- about me-->
+            <article id="about-me">
+            
+                <h2>About Me</h2>
+                <h3>Hello, <br>I'm <span>Victoria John</span>. </h3>
+                  <p>I create websites using <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheet">CSS</abbr> .</p>
+                  <div class="btn">
+                <a href="cv">Download My CV</a>
+                </div>
+                <!--  -->
+                <div class="img">
+                    <img src="/img/myphoto.jpg" alt="portfolio photo">
+                </div>
+        
+            </article >
+<br>
+<br>
+<br>
+            <!-- This the Educational Background -->
+            <article id="EB">
+                <h2 >Educational Background</h2>
+                <p>I hold diploma In Information Technology from <br> Royal College of Science and Technology.</p>
+            </article>
+<br>
+
+            <!-- skills-->
+            <article id="skills">
+                <h2>Skills</h2><br>
+
+                <!--first section skill article-->
+                <section>
+                <h3>Programming Languages</h3>
+    
+                <br>
+                <ol>
+                    <li>PHP</li>
+                    <li>Python</li>
+                </ol>
+            </section>
+<br><br>
+            <!--Second section for skills article-->
+            <section>
+                <h3>Network</h3>
+                <br>
+                <ol>
+                    <li>Network Configuration</li>
+                    <li>Network monitoring </li>
+                    <li>Troubleshooting</li>
+                </ol>
+            </section>
+            </article>
+<br>
+<!--interest article-->
+            <article id="interest">
+                <h2>Interest</h2>
+               <br>
+                <ol>
+                    <li>AI Technology</li>
+                    <li>Data Analysis</li>
+                    <li>Cybersecurity</li>
+                    <li>Game Development</li>
+                </ol>
+            </article>
+<br>
+
+<!--Form -->
+            <article id="contact">
+                <h2>Contact Me</h2>
+                <br>
+                <form action="post">
+                <fieldset class="form">
+                    <legend>Contact Me:</legend>
+               <br>
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Write your First Naame" required>
+                    <br><br>
+
+                    <label for="lname">Surname:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Write your Last Name" required>
+                    <br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="your email" required><br><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required pattern="[0-9][3]-[0-9][3]-[0-9][4]">
+                    <br><br>
+
+                    <label for="message">Your Message:</label><br>
+                    <textarea name="message" id="message" placeholder="Write your message here!" ></textarea> 
+            
+                  
+                </fieldset>
+                <br>
+            
+                <button type="submit">submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+
+            </article>
+        </main> <!-- End of main section-->
+
+<br>
+<hr>
+<hr>
+        <footer class="footer">
+            <p>&lt;&lt;&lt;&copy; <italic>Victoria John</italic>&gt;&gt;&gt; 2025</p>
+            <p class="home"><a href="/">Home</a></p>
+        </footer>
+    </body>
+</html>
