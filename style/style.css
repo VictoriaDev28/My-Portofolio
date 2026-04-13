@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: lightblue;
+    background-image: linear-gradient(to right, white, lightblue);
+    height: 100%;
+    font-size: 1.3rem;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: lightblue;
+    display: flex;
+    padding: 0 1.5rem ;  
+    position: sticky;
+    top: 0;
+    flex-shrink: 1;
+    
+}
+
+h1 {
+    font-style: oblique;
+    text-shadow: #333;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #333
+}
+
+main {
+    margin-top: 1rem;
+    min-height: 100vh;
+}
+
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 5rem;
+ }
+
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+    border: 1px double #333;
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: lightblue;
+    border: 1px solid rgb(1, 58, 77);
+    padding: 8px;
+    border-radius: 8%;
+    margin: 1rem 0 3rem;
+}
+
+.btn a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+abbr {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+#education p {
+    padding: 1rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    margin: 0.1rem;
+}
+
+.skills-header {
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.skills li {
+    list-style: none;
+}
+.interests {
+    margin: 1rem 30rem;
+}
+
+.interests li {
+    list-style: none;
+}
+
+.contact {
+    margin: 1rem 20rem;
+}
+
+form {
+    font-size: inherit;
+}
+
+fieldset, fieldset p {
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 2rem;
+    position: sticky;
+    bottom: 0;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer a:hover, a:active {
+    color: rgb(6, 135, 179);
+}
+
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+    header {
+        justify-content: space-evenly;
+        align-items: stretch;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+
+    /* html {
+        width: min(100%, 400vw)
+    } */
+
+    p {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+
+/* MOBILE */
+@media screen and (max-height: 425px) 
+and (min-aspect-ratio: 7/4) {
+    h1 {
+        font-size: 0.3rem;
+    }
+    p, a{
+        font-size: 0.2rem;
+    }
+
+    main {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+
+    }
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+}
